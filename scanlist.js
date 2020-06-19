@@ -146,6 +146,7 @@ router.post('/user',function(req,res) {
 	.exec()
 	.then(docs => {
 		res.status(200).json(docs);
+		res.status(200).json(pwd);
 	})
 	.catch(err => console.log(err));
 })
